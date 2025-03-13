@@ -154,6 +154,10 @@ export function detectSpec(root: unknown): SpecVersion {
     return SpecVersion.Overlay1;
   }
 
+  console.log(root)
+  console.log(root.openapi)
+  console.log(root.swagger)
+
   throw new Error(`Unsupported specification`);
 }
 
